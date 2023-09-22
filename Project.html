@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      ccharsetccharsetharseccharsetccharsetharseharsearseccharsetccharsetharseharseharsetharset="UTF-8"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 1</title>
+
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        dispdisplaylay: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      
+
+      .content-wrapper {
+        min-height: 100vh;
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-between;
+        background-color: orange;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        padding: 0 1em;
+        box-sizing: border-box;
+      }
+
+      #logo-wrapper img {
+        width: 200px;
+      }
+
+      nav {
+        justify-content: flex-end;
+      }
+
+      nav ul {
+        display: flex;
+      }
+      nav ul li {
+        list-style-type: none;
+        padding: 0 0.5em;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+      }
+
+      #Profile {
+        background: linear-gradient(to right, rgba(147,184,116,0), rgba(147,184,116,1));
+      
+      }
+      #content-2 {
+        /* background-color: lightblue; */
+        background-image: linear-gradient(160deg, red, white);
+      }
+      #content-3 {
+        background-color: lightgreen;
+      }
+      #content-4 {
+        background-color: lightpink;
+      }
+      #content-5 {
+        background-color: lightcyan;
+      }
+      #content-6 {
+        background-color: lightslategrey;
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .content-wrapper {
+        padding: 130px 10px;
+      }
+
+      #footer {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        margin-top: auto;
+      }
+
+      /* footer p {
+            padding-top: 0;
+            margin-top: 0;
+        } */
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="logo-wrapper">
+        <img style="height: 80px; width: 80px;"
+          src="tes.png"
+          alt="Logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#Profile">Menu 1</a></li>
+          <li><a href="#content-2">Menu 2</a></li>
+          <li><a href="#content-3">Menu 3</a></li>
+          <li><a href="#content-4">Menu 4</a></li>
+          <li><a href="#content-5">Menu 5</a></li>
+          <li><a href="#content-6">Menu 6</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <main>
+      <section id="Profile" class="content-wrapper">
+        <div style="background-color: blueviolet;">
+        <h2>Profile</h2>
+    </div>
+        <h3>Selamat datang di website <span id="dynamic-text"></span></h3>
+
+       
+
+        <div class="fa-3x">
+            <i class="fas fa-spinner fa-spin"></i>
+            <i class="fas fa-circle-notch fa-spin"></i>
+            <i class="fas fa-sync fa-spin"></i>
+            <i class="fas fa-cog fa-spin"></i>
+            <i class="fas fa-spinner fa-pulse"></i>
+            <i class="fas fa-stroopwafel fa-spin"></i>
+            <i class="fas fa-bell fa-spin"></i>
+          </div>
+
+        <p>
+            <div class="info">
+                <img src="aldo.jpg" alt="Foto Diri"style height="250px";width="25opx" border ="1"/>  
+                <div style="font-size: larger;"
+            
+            
+                  <p>Nama Lengkap: Aldo Stepanus Kaban</p>
+                  <p>Tempat, Tanggal Lahir: Medan, 30 September 2002</p>
+                  <p>Alamat: Jl. Dr Wahidin no 41, Sumatera Utara</p>
+                  <p>Email: aldokaban30@email.com</p>
+                  <p>Telepon: 085961194998</p>
+                  <!--<h2>Pendidikan</h2>
+                  <ul>
+                    <li>SD Swasta Katolik Diski</li>
+                    <li>SMP Negeri 4 Binjai</li>
+                    <li>SMA Negeri 1 Binjai</li>
+                    <li>Universitas Sumatera Utara</li>
+                  </ul>-->
+                 
+                <h2>Social Media</h2>
+                <h4>
+                <nav>
+                    <a href="https://www.linkedin.com/in/aldo-stepanus-kaban-117810268/"target"_blank">linkedin</a> |
+                    <a href="https://github.com/aldosssss?tab=repositories"target"_blank">Portofolio</a> |
+                    <a href="https://www.instagram.com/iam_aldosss/"target"_blank">instagram</a> |
+                    </nav>
+                </h4>
+                <div>
+        
+              </div>
+        </p>
+
+
+
+      </section>
+      <section id="content-2" class="content-wrapper">
+        <h2>Experience</h2>
+        <h3>- Artificial Inteligent Track Talent, StartUp Campus (02/2023-06/2023) </h3>
+        <ul>
+            <li>Berpartisipasi dalam program pelatihan yang mempelajari mengenai Artificial Inteligence (AI) yang dimana berfokus pada Computer Vision (CV)
+            </li>
+            <li>Belajar mengenai variasi dari Artifial Inteligence seperti dimulai dari belajar basic Python, Data Science, Machine Learning, Deep Learning, Computer Vision, dan Natural Languange Processing.</li>
+        </ul>
+        <h3>- Asisten Laboratorium Sistem Pengaturan dan Komputer, Departemen Teknik Elektro, Universitas Sumatera Utara (09/2022-Sekarang)</h3>
+        <ul>
+            <li>Memberikan materi kepada para praktikkan dam juga membimbing dalam percobaan modul praktikkum dimana ada 5 modul praktikkum yaitu Sistem Digital, Sistem Mikroprosessor, Sistem Tertanam, Sistem Kendali, Komputasi Numerik dan simbolik.</li>
+            <li>Melakukan Penlitian, perancangan dan pengembangan modul praktikkum yang berada di Laboratorium</li>
+            <li>Membantu Kepala Lab dalam beberapa penelitian yang berkaitan dengan pengembangan Laboratorium.</li>
+        </ul>
+        <h3>- Anggota Divisi Riset dan Pengembangan UKM ROBOTIK SIKONEK USU</h3>
+        <ul>
+            <li>Melakukan pelatihan atau Memberikan bimbingan kepada anggota UKM baru tentang mikrokontroller seperti Arduino.</li>
+            <li>Melakukan riset atau pengembangan terhadap teknologi yang sudah berkembang seperti tentang Internet of Things (IoT) dan Artificial Inteligence (AI).</li>
+        </ul>
+        <h3>
+            - Ketua Tim Robot Sepak Bola Beroda Universitas Sumatera Utara (01/2023-06/2023)
+        </h3>
+           <ul>  <li>Fokus dalam Pemrograman Robot terutama pada pergerakan, kicker dan kamera agar robot bisa mengenal lingkungannya. </li>
+            <li>Menyusun rencana atau schedule kepada masing-masing agar efektif dalam pengerjaan robot </li>
+            <li>Membantu dalam pengerjaan mekanika atau design robot</li>
+        </ul>
+        <h3>- Liason Officer dalam event Erasmus (07/2022)</h3>
+        <ul>
+            <li>Menyusun rencana untuk aktivitas tamu</li>
+            <li>Menjelaskan kepada para tamu mengenai lingkungan USU dan juga fasilitas-fasilitas yang tersedia di USU</li>
+        </ul>
+      </section>
+
+
+
+      <section id="content-3" class="content-wrapper">
+        <h2>Education</h2>
+      <h3>- SD Swasta Katolik Diski (2008-2014)</h3>
+
+        <h3>- SMP Negeri 4 Binjai (2014-2017)</h3>
+        <h3>- SMA Negeri 1 Binjai (2017-2020) </h3>
+        <h3>- Universitas Sumatera Utara - Teknik Elektro (2020-Sekarang)</h3>
+            <ul>
+                <li>Mempelajari tentang dasar-dasar fisika, kelistrikan dan energi terbarukan</li>
+                <li>Mempelajari tentang Pemrograman seperti C/C++, Python, Arduino dll</li>
+                <li>IPK 3,38</li>
+            </ul>
+        
+      </section>
+
+
+
+
+
+      <section id="content-4" class="content-wrapper">
+        <h2>Skills</h2>
+        <h3>- Bahasa Pemrograman C/C++
+        </h3>
+        <ul>
+            <li>Melakukan pelatihan bahasa pemrograman C/C++ kepada praktikkan di Laboratorium Sistem Pengaturan dan Komputer</li>
+            <li>Melakukan riset dengan menggunakan mikrokontroller seperti Arduino</li>
+        </ul>
+        <h3>
+            Bahasa Pemrograman Python
+        </h3>
+        <ul>
+            <li>Melakukan pelatihan bahasa pemrograman python kepada praktikkan di Laboratorium Sistem Pengaturan dan Komputer</li>
+            <li>Melakukan pembelajaran tentang AI seperti Machine Learning, Deep Learning, Computer Vision, Data Science,dll.</li>
+        </ul>
+      </section>
+
+
+
+      <section id="content-5" class="content-wrapper">
+        <h2>Content 5</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          itaque earum magni aliquam repellendus et tempore, voluptate nisi
+          accusamus sapiente dolorum nemo explicabo ut sit necessitatibus vitae
+          quibusdam iure exercitationem.
+        </p>
+      </section>
+      <section id="content-6" class="content-wrapper">
+        <h2>Content 6</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          itaque earum magni aliquam repellendus et tempore, voluptate nisi
+          accusamus sapiente dolorum nemo explicabo ut sit necessitatibus vitae
+          quibusdam iure exercitationem.
+        </p>
+      </section>
+      <section id="content-7" class="content-wrapper">
+        <h2>Contact Me</h2>
+        <p>
+          If you are willing to collaborate with me, just fill the form below.
+        </p>
+
+        <!-- <form> -->
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" /> <br />
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" /> <br /><br />
+
+        <button type="button" onclick="contactMe(this);">Submit</button>
+        <!-- </form> -->
+      </section>
+    </main>
+
+    <section id="footer">
+      <p>&copy; Copyright 2023. Aldo Stepanus Kaban. All Rights Reserved</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+    let typed = new Typed('#dynamic-text', {
+        strings: ['Aldo Stepanus Kaban...', 'Yang akan membawa kalian jauh mengenali diri saya', 'dan Happy Nice Day..'],
+        typeSpeed: 90,
+        backSpeed: 30,
+        // digunakan jika ingin looping terus-menerus
+        loop: true
+        });
+
+      contactMe = () => {
+        // event.preventDefault();
+        console.log("a");
+
+        Swal.fire({
+          icon: "success",
+          title: "Berhasil!",
+          text: "Terima kasih telah menghubungi saya! Nanti akan saya email untuk balasannya. Wait ya :D ",
+        });
+      };
+    </script>
+  </body>
+</html>
