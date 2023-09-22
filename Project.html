@@ -33,7 +33,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
       #header {
         display: flex;
         justify-content: space-between;
-        background-color: orange;
+        background-color:#FFE4E1;
         position: fixed;
         width: 100%;
         align-items: center;
@@ -62,12 +62,21 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
       }
 
       #Profile {
-        background: linear-gradient(to right, rgba(147,184,116,0), rgba(147,184,116,1));
+        -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
       
       }
+      @-webkit-keyframes colorchange {
+     0%  {background: #9B59B6;} 
+    25%  {background: #DC7633;}
+    50%  {background: #117A65;}
+    75%  {background: #78281F;}
+    100% {background:#33FFF3;}
+      }
+
       #content-2 {
         /* background-color: lightblue; */
-        background-image: linear-gradient(160deg, red, white);
+        background-image: linear-gradient(160deg, #48D1CC, #FDF5E6);
       }
       #content-3 {
         background-color: lightgreen;
@@ -76,10 +85,17 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
         background-color: lightpink;
       }
       #content-5 {
-        background-color: lightcyan;
+        -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+
+  
       }
+     
       #content-6 {
         background-color: lightslategrey;
+      }
+      #content-7{
+        background-color: #FFDEAD;
       }
 
       h2 {
@@ -122,13 +138,13 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
           <li><a href="#content-4">Menu 4</a></li>
           <li><a href="#content-5">Menu 5</a></li>
           <li><a href="#content-6">Menu 6</a></li>
+          <li><a href="#content-7">Menu 7</a></li>
         </ul>
       </nav>
     </section>
 
     <main>
-      <section id="Profile" class="content-wrapper">
-        <div style="background-color: blueviolet;">
+      <section id="Profile" class="content-wrapper";>
         <h2>Profile</h2>
     </div>
         <h3>Selamat datang di website <span id="dynamic-text"></span></h3>
@@ -270,27 +286,41 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
 
 
       <section id="content-5" class="content-wrapper">
-        <h2>Content 5</h2>
+        <h2>Hobi</h2>
+        <h3>- Bermain Musik (Piano dan Gitar)</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          itaque earum magni aliquam repellendus et tempore, voluptate nisi
-          accusamus sapiente dolorum nemo explicabo ut sit necessitatibus vitae
-          quibusdam iure exercitationem.
+            &emsp;Bermain musik adalah salah kegiatan yang sangat saya sukai dan kegiatan yang paling sering saya lakukan. Saya belajar musik sejak kecil tepatnya ketika masih duduk di bangku SMP. Alat musik yang saya mampu aplikasikan yaitu Gitar dan Piano. Saya juga diberi kesempatan untuk memainkan musik di gereja. Tidak hanya sampai disitu, untuk mengembangkan terus skill saya, saya bersama teman-teman saya sering juga melakukan penampilan di cafe atau tempat-tempat lainnya. Dengan mampu memainkan musik, mampu menambah uang saku saya.
         </p>
+        <h3>- Bermain Badminton</h3>
+        <p>
+            &emsp;Adapun kegiatan yang cukup sering saya mainkan adalah bermain Badminton. Saya belajar bermain Badminton sejak saya duduk di bangku SMA. Dengan bermain Badminton,  mampu menguras energi dan tenaga saya. Namun dengan rutin bermain badminton, dapat membuat badan menjadi fit.
+        </p>
+        <h3>- Berenang</h3>
+        <p>
+            &emsp;Berenang merupakan kegiatan rutin mingguan yang saya lakukan. Dengan berenang,membuat tubuh terasa segar. Saya belajar berenang sejak SD sehingga sekarang saya dapat dikatakan bisa untuk berenang.
+        </p>
+
       </section>
+
+
+
       <section id="content-6" class="content-wrapper">
-        <h2>Content 6</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          itaque earum magni aliquam repellendus et tempore, voluptate nisi
-          accusamus sapiente dolorum nemo explicabo ut sit necessitatibus vitae
-          quibusdam iure exercitationem.
-        </p>
+        <h2>Award</h2>
+        <h3>- Ketua Tim Robot Sepakbola Beroda Universitas Sumatera Utara dalam Kontes Robot Indonesia 2023</h3>
+        <img src="kri-2023.jpg"alt="kri-2023"border="2"/>
+        <h3>- Studi Independen AI Startup Campus Computer Vision Track</h3>
+        <img src="sc-2023.jpg"alt="StartUp Campus 2023 batch 5"border="2">
+        <h3>- Koordinator Laboratorium Sistem Pengaturan dan Komputer</h3>
+        <img src="aslab.jpg"alt="aslab-aldo"border="2">
+        <h3>- Anggota Tim Robot Sepakbola Beroda Universitas Sumatera Utara dalam Kontes Robot Indonesia 2022 </h3>
+        <img src="kri-2022.jpg"alt="kri-2022"border="2">
+
+
       </section>
       <section id="content-7" class="content-wrapper">
-        <h2>Contact Me</h2>
+        <h2>Hubungi Saya</h2>
         <p>
-          If you are willing to collaborate with me, just fill the form below.
+          Jika kamu ingin berdiskusi dengan saya lebih lanjut, silahkan isi form di bawah ini.
         </p>
 
         <!-- <form> -->
@@ -329,7 +359,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
         Swal.fire({
           icon: "success",
           title: "Berhasil!",
-          text: "Terima kasih telah menghubungi saya! Nanti akan saya email untuk balasannya. Wait ya :D ",
+          text: "Cieee.. Berhasil ni ye kirim biodatanya. Harap Bersabar ya, saya akan menghubungi kamu segera... :)",
         });
       };
     </script>
